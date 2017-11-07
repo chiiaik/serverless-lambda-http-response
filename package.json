@@ -1,0 +1,25 @@
+{
+  "name": "http-response",
+  "version": "1.0.0",
+  "description": "Helper to create HTTP response object for AWS lambda proxy",
+  "main": "http-response.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiiaik/serverless-lambda-http-response.git"
+  },
+  "keywords": [
+    "aws",
+    "serverless",
+    "lambda",
+    "proxy"
+  ],
+  "author": "Chii Aik Fang",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/chiiaik/serverless-lambda-http-response/issues"
+  },
+  "homepage": "https://github.com/chiiaik/serverless-lambda-http-response#readme"
+}
