@@ -1,6 +1,6 @@
 {
-  "name": "http-response",
-  "version": "1.0.0",
+  "name": "serverless-lambda-http-response",
+  "version": "1.0.1",
   "description": "Helper to create HTTP response object for AWS lambda proxy",
   "main": "http-response.js",
   "scripts": {

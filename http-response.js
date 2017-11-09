@@ -8,7 +8,7 @@ function HttpResponse() {
         return {
             statusCode: this.statusCode,
             headers: this.headers,
-            body: JSON.stringify({data: data}),
+            body: JSON.stringify(data),
         };
     };
 
@@ -16,7 +16,7 @@ function HttpResponse() {
         return {
             statusCode: 400,
             headers: this.headers,
-            body: JSON.stringify({error: error}),
+            body: JSON.stringify(error),
         };
     };
 
@@ -24,7 +24,7 @@ function HttpResponse() {
         return {
             statusCode: 500,
             headers: this.headers,
-            body: JSON.stringify({error: error}),
+            body: JSON.stringify(error),
         };
     };
 }
