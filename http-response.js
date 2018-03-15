@@ -1,3 +1,6 @@
+const AWS = require('./aws');
+const Azure = require('./azure');
+
 function HttpResponse() {
     this.statusCode = 200;
     this.headers = {
@@ -28,4 +31,13 @@ function HttpResponse() {
         };
     };
 }
+
+HttpResponse.prototype.aws = function () {
+    return new AWS();
+}
+
+HttpResponse.prototype.azure = function () {
+    return new Azure();
+}
+
 module.exports = HttpResponse;
