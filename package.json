@@ -4,7 +4,7 @@
   "description": "Wrapper to abstract service provider specific implementation on HTTP trigger response.",
   "main": "http-response.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose --coverage"
   },
   "repository": {
     "type": "git",
