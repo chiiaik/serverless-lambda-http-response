@@ -17,7 +17,9 @@ AWS.prototype.clientError = function(error) {
     return {
         statusCode: 400,
         headers: this.headers,
-        body: JSON.stringify(error),
+        body: JSON.stringify({
+            error: error
+        }),
     };
 };
 
@@ -25,7 +27,9 @@ AWS.prototype.serverError = function(error) {
     return {
         statusCode: 500,
         headers: this.headers,
-        body: JSON.stringify(error),
+        body: JSON.stringify({
+            error: error
+        }),
     };
 };
 
