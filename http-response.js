@@ -15,6 +15,15 @@ function HttpResponse() {
         };
     };
 
+    this.redirect = function(isPermenant, location) {
+        this.headers.Location = location;
+        return {
+            statusCode: isPermenant ? 301 : 302,
+            headers: this.headers,
+            body: '',
+        };
+    };
+
     this.clientError = function(error) {
         return {
             statusCode: 400,

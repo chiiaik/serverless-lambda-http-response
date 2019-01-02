@@ -9,6 +9,16 @@ Azure.prototype.ok = function(data) {
     };
 };
 
+Azure.prototype.redirect = function(isPermenant, location) {
+    return {
+        status: isPermenant ? 301 : 302,
+        headers: {
+            Location: location,
+        },
+        body: null,
+    };
+};
+
 Azure.prototype.clientError = function(error) {
     return {
         status: 400,
