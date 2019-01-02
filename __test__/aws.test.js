@@ -12,11 +12,11 @@ test ('ok response is valid', () => {
 test ('clientError response is valid', () => {
     let response = new aws().clientError(clientError);
     expect(response.statusCode).toBe(400);
-    expect(response.body).toEqual('"This is a client error"');
+    expect(response.body).toEqual(JSON.stringify({ error: clientError }));
 })
 
 test ('serverError response is valid', () => {
     let response = new aws().serverError(serverError);
     expect(response.statusCode).toBe(500);
-    expect(response.body).toEqual('"This is a server error"');
+    expect(response.body).toEqual(JSON.stringify({ error: serverError }));
 })
